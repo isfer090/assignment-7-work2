@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-color: white;
+}
+.h-menu ul li{
+    font-weight: 800;
+    display: inline-block;
+}
+.h-box{
+    background-color: #3acdfc;
+    padding: 10px 20px;
+    margin:0 5px 0  5px;
+    border-radius: 5px;
+    transition: .5s;
+
+    position: relative;
+}
+.h-box::before{
+    content: "";
+    width: 0;
+    height: 5px;
+    top: 70%;
+    left: 14px;
+    position: absolute;
+    background-color: rgb(2, 2, 61);
+    border-radius: 4px;
+    transition: .5s;
+}
+.h-box:hover:before{
+    width: 72%;
+}
+.h-box:hover{
+    background-color: white;
+    color: #3acdfc;
+}
+
+
+
+/* this is timer section */
+
+
+
+.time-planer{
+    background-color: #3acdfc;
+    padding: 80px;
+    color: #ecf3f7;
+}
+.time-planer h2{
+    font-weight: 600;
+}
+.d-btn{
+    display: inline-block;
+    background-color: #fefcfe;
+    color: #dbdada;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+
+    position: relative;
+    z-index: 1;
+
+}
+.d-btn::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    border-radius: 9px;
+
+    position: absolute;
+    transition: .5s;
+    z-index: -1;
+}
+.d-btn:hover:before{
+    width: 100%;
+}
+
+
+/*  this is banner section  */
+
+
+.b-img img{
+    height: 191px;
+    width: 255px;
+}
+
+
+.bb-img img{
+    height: 191px;
+    width: 255px;
+    transition: .5s;
+}
+.bb-img img:hover{
+    height: 150px;
+    width: 190px;
+    transform: rotate(360deg);
+    margin: 30px;
+}
+
+
+.img-style-1 img{
+    height: 191px;
+    width: 255px;
+    transition: .5s;
+}
+.img-style-1 img:hover{
+    height: 150px;
+    width: 190px;
+    transform: rotate(-30deg);
+    margin: 30px;
+}
+
+
+.img-style-2 img{
+    height: 191px;
+    width: 255px;
+    transition: .5s;
+}
+.img-style-2 img:hover{
+    height: 150px;
+    width: 190px;
+    transform: rotate(30deg);
+    margin: 30px;
+}
+
+
+.img-style-zoom img{
+    height: 191px;
+    width: 255px;
+    transition: .5s;
+}
+.img-style-zoom img:hover{
+    margin: 10px;
+    transform: scale(1.1);
+}
+
+.img-style-spin img{
+    height: 191px;
+    width: 255px;
+    transition: .5s;
+}
+
+.img-style-spin img:hover{
+    margin: 30px;
+    height: 150px;
+    width: 190px;
+    transform: rotate(360deg);
+}
+/*  this is about section  */
+
+.a-box{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    transition: .5s;
+}
+.a-box:hover{
+    transform: rotate(0);
+    background-color: aqua;
+    color: white;
+}
+.a-box-2{
+    transform: rotate(-30deg);
+    transition: .5s;
+}
+.a-box-3{
+    transform: rotate(30deg);
+    transition: .5s;
+}
+/* this is footer section */
+.footer{
+    color: white;
+    background-color: #2e2f31;
+    padding-top:28px;
+    padding-bottom:20px;
+}
